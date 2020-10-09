@@ -94,11 +94,13 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.card_quiz:
+                Intent intent = new Intent(getApplicationContext(), menu_quiz.class);
+                startActivity(intent);
                 break;
             case R.id.card_keluar:
                 break;
             case R.id.card_vidio:
-                Intent intent = new Intent(getApplicationContext(), menu_vidio.class);
+                 intent = new Intent(getApplicationContext(), menu_vidio.class);
                 startActivity(intent);
                 break;
             case R.id.card_materi:
