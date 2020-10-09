@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="goid.kotajambi.aplikasi_pembelajaran_biologi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".menu.menu_quiz"></activity>
+        <activity android:name=".menu.detail_materi" />
+        <activity android:name=".menu.detail_vidio" />
+        <activity
+            android:name=".menu.menu_vidio"
+            android:label="VIDIO" />
+        <activity
+            android:name=".menu.menu_materi"
+            android:label="MATERI" />
+        <activity
+            android:name=".menu.MainActivity"
+            android:label="BIOLOGI">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
